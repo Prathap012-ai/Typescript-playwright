@@ -1,0 +1,54 @@
+<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="15.30753">
+<testsuite name="reports\report.spec.ts" timestamp="2026-10-05T08:51:13.028Z" hostname="chromium" tests="3" failures="1" skipped="0" time="31.518" errors="0">
+<testcase name="logotest" classname="reports\report.spec.ts" time="9.007">
+</testcase>
+<testcase name="title test" classname="reports\report.spec.ts" time="13.06">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\reports-report-title-test-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\reports-report-title-test-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\reports-report-title-test-chromium\error-context.md]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveTitle(expected) failed" type="expect.toHaveTitle">
+<![CDATA[  [chromium] › reports\report.spec.ts:57:5 › title test ────────────────────────────────────────────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected: "Demo Web Shop1"
+    Received: "Demo Web Shop"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        12 × locator resolved to <html>…</html>
+           - unexpected value "Demo Web Shop"
+
+
+      56 |
+      57 | test("title test",async({page})=>{
+    > 58 |     await expect(page).toHaveTitle("Demo Web Shop1");
+         |                        ^
+      59 | });
+      60 |
+      61 | test("search test",async({page})=>{
+        at C:\AutomationFiles\SDET TypeScript Programming and Playwright Automation\PWDemo\tests\reports\report.spec.ts:58:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\reports-report-title-test-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\reports-report-title-test-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\reports-report-title-test-chromium\error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="search test" classname="reports\report.spec.ts" time="9.451">
+</testcase>
+</testsuite>
+</testsuites>
